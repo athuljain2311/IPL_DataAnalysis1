@@ -12,6 +12,15 @@ from src.components.playerwise_analysis import *
 from src.exception import CustomException
 from src.logger import logging
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            header {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.sidebar.title('IPL Data Analysis')
 
 choice = st.sidebar.radio(
