@@ -78,6 +78,7 @@ def topWinsTeamGraph(matches):
                             y = top_df['Winner'],
                             orientation = 'h',
                             text = top_df['Win'],
+                            insidetextanchor = 'middle',
                             marker = dict(color = '#057DCD')))
 
         fig.update_xaxes(showticklabels=False)
