@@ -11,3 +11,9 @@
 3. Activate the environment by running the command `conda activate venv`
 4. After activating the environment, run the command `pip install -r requirements.txt` to install all the dependencies
 5. Finally, run the command `streamlit run app.py` to launch the web application.
+
+## Understanding the code
+
+* Based on the structure of the application, the code to generate the graphs present in each of the four tabs in the application, have been split up into 4 different modules in the `src/components` directory.
+* `app.py` houses the entire structure of the web application.
+* The notebook based on which the modules have been developed, has been included in the `data` directory.
